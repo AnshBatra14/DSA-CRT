@@ -1,0 +1,36 @@
+ques: operator overloading
+ans:
+public class a14_operator_overloading {
+    static class complex{
+        int real;
+        int img;
+
+        complex(int real , int img){
+            this.real = real;
+            this.img = img;
+        }
+
+        // function for addition of complex numbers
+        complex add(complex c) {
+
+            int newReal = this.real + c.real;
+            int newImg = this.img + c.img;
+
+            return new complex(newReal, newImg);
+        }
+
+        void display(){
+            System.out.println(real+"+i"+img);
+        }
+    }
+
+    public static void main(String[] args) {
+        complex c1 = new complex(3,4);
+        complex c2 = new complex(2,4);
+        complex c3=  c1.add(c2);
+        c3.display();
+}
+*******************************************************************************************************************************************************************************************************************************
+
+    
+}
