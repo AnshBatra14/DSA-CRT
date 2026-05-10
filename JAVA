@@ -1,4 +1,4 @@
-Ques: operator overloading
+Ques1: operator overloading
 Ans:
 public class a14_operator_overloading {
     static class complex{
@@ -31,7 +31,7 @@ public class a14_operator_overloading {
         c3.display();
 }
 *******************************************************************************************************************************************************************************************************************************
-Ques:function overloading
+Ques2:function overloading
 Ans:
 public class a13_function_overloading {
     static class Student{
@@ -53,7 +53,7 @@ public class a13_function_overloading {
     }
 }
 ********************************************************************************************************************************************************************************************************************************
-Ques: Operator overloading
+Ques3: Operator overloading
 Ans:
 public class a14_operator_overloading {
     static class complex{
@@ -88,7 +88,7 @@ public class a14_operator_overloading {
     }
 }
 ***********************************************************************************************************************************************************************
-Ques: Virtual function
+Ques4: Virtual function
 Ans:
 public class a15_virtual_function {
       static class Human{
@@ -119,7 +119,7 @@ public class a15_virtual_function {
     }
 }
 *********************************************************************************************************************************************************************
-Ques:1_D Array
+Ques5:1_D Array
 Ans:
 public class a16_1_d_array {
     public static void main(String[] args) {
@@ -133,7 +133,7 @@ public class a16_1_d_array {
     }
 }
 **********************************************************************************************************************************************************************
-Ques: sum of array
+Ques6: sum of array
 Ans:public class a17_array_sum {
     public static void main(String[] args) {
 
@@ -147,7 +147,7 @@ Ans:public class a17_array_sum {
     }
 }
 ***********************************************************************************************************************************************************************
-Ques: Odd sum and even sum of array
+Ques7: Odd sum and even sum of array
 Ans:
 public class a18_odd_even_sum {
     public static void main(String[] args) {
