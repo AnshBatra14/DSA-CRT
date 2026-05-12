@@ -1,4 +1,4 @@
-Ques 1: Two Sum II - Input Array Is Sorted
+Ques 167: Two Sum II - Input Array Is Sorted
 Ans:
 class Solution {
     public int[] twoSum(int[] numbers, int target) {
@@ -25,3 +25,88 @@ class Solution {
     }
 }
 ***********************************************************************************************************************************************************************
+Ques 704 : Binary search
+Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
+Ans:
+class Solution {
+
+    public int search(int[] nums, int target) {
+
+        int start = 0;
+        int end = nums.length - 1;
+
+        while (start <= end) {
+
+            int mid = start + (end - start) / 2;
+
+            if (nums[mid] == target) {
+                return mid;
+            }
+
+            else if (nums[mid] < target) {
+                start = mid + 1;
+            }
+
+            else {
+                end = mid - 1;
+            }
+        }
+
+        return -1;
+    }
+}
+****************************************************************************************************************************************************************************
+Ques 34 : Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.
+
+If target is not found in the array, return [-1, -1].
+Ans:
+class Solution {
+    public int[] searchRange(int[] nums, int target) {
+
+        int first = firstOcc(nums,target);
+        int last = lastOcc(nums,target);
+        return new int[]{first,last};
+    }
+    public int firstOcc(int[]nums , int target){
+        int start = 0;
+        int end = nums.length-1;
+        int ans = -1;
+        while(start <= end){
+            int mid = (start+end)/2;
+            if(nums[mid]==target){
+                ans = mid;
+                end = mid-1;
+
+            }
+            else if(nums[mid]<target){
+                start = mid+1;
+            }
+            else{
+                end = mid-1;
+            }
+        }
+        return ans;
+        
+    }
+    public int lastOcc(int[]nums , int target){
+        int start = 0;
+        int end = nums.length-1;
+        int ans = -1;
+        while(start <= end){
+            int mid = (start+end)/2;
+            if(nums[mid]==target){
+                ans = mid;
+                start = mid+1;
+
+            }
+            else if(nums[mid]<target){
+                start = mid+1;
+            }
+            else{
+                end = mid-1;
+            }
+        }
+        return ans;
+    }     
+}
+***************************************************************************************************************************************************************************************************
