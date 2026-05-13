@@ -1,1 +1,74 @@
-D
+Ques1:1_D Array
+Ans:
+public class a16_1_d_array {
+    public static void main(String[] args) {
+        int arr[]  = {2,1,3,4,5};
+
+        //user input in array
+        for(int i=0 ; i<=4 ; i++ ){
+            System.out.print(arr[i]);
+        }
+        System.out.println();
+    }
+}
+**********************************************************************************************************************************************************************
+Ques2: sum of array
+Ans:public class a17_array_sum {
+    public static void main(String[] args) {
+
+        //sum of elements of array
+        int arr[] = {2,3,1,0,6};
+        int sum = 0;
+        for(int i=0 ; i<=4;i++){
+            sum = sum+arr[i];
+        }
+        System.out.println("sum is"+" "+sum);
+    }
+}
+***********************************************************************************************************************************************************************
+Ques3: Odd sum and even sum of array
+Ans:
+public class a18_odd_even_sum {
+    public static void main(String[] args) {
+        int arr[] = {5,10,15,20,25};
+        int oddsum = 0;
+        int evensum = 0;
+
+        for(int i=0 ; i<=4 ; i++){
+            if(arr[i]%2 == 0){
+                evensum = evensum + arr[i];
+            }else{
+                oddsum = oddsum + arr[i];
+            }
+        }
+        System.out.println("evensum =" + evensum );
+        System.out.println("oddsum ="+ oddsum);
+    }
+}
+************************************************************************************************************************************************************************
+Ques4 : Reverse Array
+Ans:
+public class a19_reverse_arr {
+    public static void main(String[] args) {
+        int arr[] = {2,3,4,5,6};
+        int reverse = 0;
+        for(int i=4 ; i>=0 ; i--){
+            System.out.print(
+                    arr[i]);
+        }
+        System.out.println();
+    }
+}
+********************************************************************************************************************************************************************************
+Ques5 : Reverse string
+Ans:
+public class a20_reverse_str {
+    public static void main(String[] args) {
+        String str = "Ansh Batra";
+        String reversed  =" ";
+        for(int i = str.length() -1 ; i>=0; i--){
+            reversed = reversed + str.charAt(i);
+        }
+        System.out.println(reversed);
+    }
+}
