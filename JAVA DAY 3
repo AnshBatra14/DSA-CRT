@@ -1,4 +1,4 @@
-Ques 10 : Bubble sort
+Ques 1 : Bubble sort
 Ans:
 public class a21_bubble_sort{
     public static void bubbleSort(int arr[]) {
@@ -32,7 +32,7 @@ public class a21_bubble_sort{
     }
 }
 *******************************************************************************************************************************************************************************
- Ques 11: Insertion sort
+ Ques 2: Insertion sort
 Ans:
 public class a22_insertion_sort {
 
@@ -67,7 +67,7 @@ public class a22_insertion_sort {
     }
 }
 *******************************************************************************************************************************************************************************
-Ques 12: Selection Sort
+Ques 3: Selection Sort
 Ans:
 public class a23_selection_sort {
     public static void selectionSort(int arr[]) {
