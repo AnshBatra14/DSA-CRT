@@ -57,3 +57,21 @@ public class a25_recursion {
         printNumbers(1);
     }
 }
+***************************************************************************************************************************************************************************************
+Ques 3; Recursion(Print 2 table)
+Ans:
+public class a26_recursion2 {
+    static void printTable(int n,int i) {
+        //base case
+        if (i > 10) {
+            return;
+        }
+        System.out.println(n*i);
+
+        printTable(n,i+1);
+    }
+
+    public static void main(String[] args) {
+        printTable(2,1);
+    }
+}
