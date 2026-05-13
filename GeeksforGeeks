@@ -1,1 +1,20 @@
-
+Ques 1 : Sum of digits
+Given a positive number n. Find the sum of all the digits of n.
+Ans:
+import java.util.Scanner;
+class Solution {
+    static int sumOfDigits(int n) {
+        // code here
+        // base case
+        if(n==0){
+            return 0;
+        }
+        return(n%10) + sumOfDigits(n/10);
+    }
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.println(sumOfDigits(n));
+    }
+}
+***********************************************************************************************************************************************************************************************
